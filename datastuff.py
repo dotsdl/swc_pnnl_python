@@ -73,10 +73,11 @@ if __name__ == '__main__':
 
     for filename in sys.argv[1:]:
 
+        print(filename)
+
         # make and output a figure for the data to PDF
         fig = make_plots(filename)
         fig.savefig(filename + '.pdf')
 
-
-
-
+        # give me the variety of weirdness the data displays
+        print(identify_weirdness(filename))
