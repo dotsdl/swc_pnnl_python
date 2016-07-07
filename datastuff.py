@@ -66,3 +66,17 @@ def identify_weirdness(filename):
         out = "seems okay!"
  
     return out
+
+if __name__ == '__main__':
+
+    import sys
+
+    for filename in sys.argv[1:]:
+
+        # make and output a figure for the data to PDF
+        fig = make_plots(filename)
+        fig.savefig(filename + '.pdf')
+
+
+
+
