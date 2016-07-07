@@ -1,3 +1,6 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
 def make_plots(filename):
     """Create a three-panel plot for the given dataset.
     
